@@ -1,0 +1,140 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0; 
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --transperent-hue: 210;
+    --gray-gue: 240;
+    --color-transperent: hsl(var(--transperent-hue),100%, 100%);
+    --color-transperent-variant: hsl(var(--transperent-hue),100%, 65%);
+    --color-secondary: yellow;
+    --color-gray-100: hsl(var(--gray-hue), 47%, 94%);
+    --color-gray-200: hsl(var(--gray-hue), 26%, 75%);
+    --color-gray-300: hsl(var(--gray-hue), 24%, 64%);
+    --color-gray-400: hsl(var(--gray-hue), 16%, 41%);
+    --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
+    --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+
+    --transition: all 500ms ease;
+}
+
+body {
+    color: var(--color-gray-200);
+    line-height: 1.7;
+    overflow-x: hidden;
+    background: var(--color-gray-600);
+}
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+h1, h2, h3, h4, h5{
+    line-height: 1.2;
+    color: var(--color-gray-100);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--color-gray-100);
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bg {
+    background-image: url(./images/backgrnd.jpg);
+    width: 1536px;
+    height: 721px;
+    background-size: cover;
+}   
+
+.symbol {
+    background-image: url(./images/image.png);
+    width: 600px;
+    height: 600px;
+    size-adjust: 300px;
+}
+
+.embedtext {
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    margin-left: 5%;
+    font-weight: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: solid;
+    margin-top: 4%;
+}
+
+.embedtext2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+.embedtext4 {
+    font-size: 25px;
+    color: yellow;
+    text-align: center;
+}
+
+.embedtext3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    font-size: 12.8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: yellow; }
+  }
+
+/*
+.embedtext3 {
+    font-size: 65%;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+*/
+
+
